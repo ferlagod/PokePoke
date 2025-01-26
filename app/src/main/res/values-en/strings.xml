@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <resources>
+        <string name="app_name" translatable="false">PokePoke</string>
+        <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+        <string name="logo">Logo</string>
+        <string name="Users">User</string>
+        <string name="password">Password</string>
+        <string name="session">Log in</string>
+        <string name="register">Register</string>
+        <string name="email">Email</string>
+        <string name="confirm_password">Confirm password</string>
+        <string name="with_account">I already have an account. Log in</string>
+        <string name="pokedex">Pokedex</string>
+        <string name="settings">Settings</string>
+        <string name="captured">Captured</string>
+        <string name="pokemon_name">Pokemon Name</string>
+        <string name="pokemon_type">Pokemon Type</string>
+        <string name="closed_session">Log out</string>
+        <string name="change_language">Change language</string>
+        <string name="login_google">Login with Google</string>
+        <string name="default_web_client_id">1085192352632-smt015c5m6cnhekd5g5kb4fgpfkbq92o.apps.googleusercontent.com</string>
+        <string name="about">About</string>
+        <string name="developer">Developer: Fernando Lago\nVersion: 1.0.0</string>
+        <string name="closed">Close</string>
+        <string name="pokemon_image">Pokemon Image</string>
+        <string name="pokemon_index">Index: #%d</string>
+        <string name="pokemon_weight">Weight: %.2f kg</string>
+        <string name="pokemon_height">Height: %.2f m</string>
+        <string name="unknown_types">Unknown types</string>
+        <string name="pokemon_deleted">%s deleted</string>
+        <string name="error_deleting_pokemon">Error deleting the Pokémon</string>
+        <string name="delete_pokemon">Delete Pokémon</string>
+        <string name="error">Error</string>
+        <string name="fragment_not_loaded">Fragment not loaded</string>
+        <string name="ok">Ok</string>
+        <string name="error_session">Error session</string>
+        <string name="error_loading_pokemon">Error loading Pokémon details</string>
+        <string name="error_loading_data">Error loading data</string>
+        <string name="error_loading">Error loading</string>
+        <string name="authentication_failed">Authentication failed.</string>
+        <string name="google_sign_in_failed">Google Sign-In failed.</string>
+        <string name="no_email_empty">The email cannot be empty</string>
+        <string name="firebase_authentication_failed">Firebase authentication failed</string>
+
+</resources>

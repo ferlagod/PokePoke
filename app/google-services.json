@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1085192352632",
+    "project_id": "pokepoke-817a3",
+    "storage_bucket": "pokepoke-817a3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085192352632:android:27a2504c7af895bf770e8d",
+        "android_client_info": {
+          "package_name": "dam.pmdm.pokepoke"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085192352632-t3jso0jcbqhu8misa7cp0rkiaclck0c1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dam.pmdm.pokepoke",
+            "certificate_hash": "da5ae1326859c1b8c3adf9d72d9dce82fc7a74d8"
+          }
+        },
+        {
+          "client_id": "1085192352632-smt015c5m6cnhekd5g5kb4fgpfkbq92o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtXtA3pve-B2legvh-PAOK1xCgd337ZO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085192352632-smt015c5m6cnhekd5g5kb4fgpfkbq92o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

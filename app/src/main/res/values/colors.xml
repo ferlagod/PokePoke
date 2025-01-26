@@ -1,0 +1,8 @@
+<resources>
+    <color name="pokepoke_blue">#3B4CCA</color>
+    <color name="pokepoke_dark_blue">#2A3B8F</color>
+    <color name="pokepoke_yellow">#FFCC00</color>
+    <color name="pokepoke_red">#FF0000</color>
+    <color name="pokepoke_background">#dedefc</color>
+    <color name="black">#FF000000</color>
+</resources>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name" translatable="false">PokePoke</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="logo">Logo</string>
+    <string name="Users">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="session">Iniciar sesión</string>
+    <string name="register">Registrarse</string>
+    <string name="email">Correo electrónico</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="with_account">Ya tengo cuenta. Iniciar sesión</string>
+    <string name="pokedex">Pokedex</string>
+    <string name="settings">Ajustes</string>
+    <string name="captured">Capturados</string>
+    <string name="pokemon_name">Nombre Pokemon</string>
+    <string name="pokemon_type">Tipo de Pokemon</string>
+    <string name="closed_session">Cerrar sesión</string>
+    <string name="change_language">Cambiar idioma</string>
+    <string name="login_google">Login con Google</string>
+    <string name="about">Acerca de</string>
+    <string name="developer">Desarrollador: Fernando Lago\nVersión: 1.0.0</string>
+    <string name="closed">Cerrar</string>
+    <string name="pokemon_image">Imagen del Pokémon</string>
+    <string name="pokemon_index">Índice: #%d</string>
+    <string name="pokemon_weight">Peso: %.2f kg</string>
+    <string name="pokemon_height">Altura: %.2f m</string>
+    <string name="unknown_types">Tipos desconocidos</string>
+    <string name="pokemon_deleted">%s eliminado</string>
+    <string name="error_deleting_pokemon">Error al eliminar el Pokémon</string>
+    <string name="delete_pokemon">Eliminar Pokémon</string>
+    <string name="error">Error</string>
+    <string name="fragment_not_loaded">Fragmento no cargado</string>
+    <string name="ok">Ok</string>
+    <string name="default_web_client_id">1085192352632-smt015c5m6cnhekd5g5kb4fgpfkbq92o.apps.googleusercontent.com</string>
+    <string name="error_session">Error al iniciar sesión</string>
+    <string name="error_loading_pokemon">Error al cargar los detalles del Pokémon</string>
+    <string name="error_loading_data">Error al cargar los datos</string>
+    <string name="error_loading">Error al cargar</string>
+    <string name="authentication_failed">Fallo en la autentificación.</string>
+    <string name="google_sign_in_failed">Fallo en la autentificación con Google.</string>
+    <string name="no_email_empty">El email no puede estar vacío</string>
+    <string name="firebase_authentication_failed">Error en la autenticación de Firebase</string>
+
+</resources>

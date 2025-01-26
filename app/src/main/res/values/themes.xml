@@ -1,0 +1,19 @@
+<resources>
+    <style name="Theme.PokePoke" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colores principales -->
+        <item name="colorPrimary">@color/pokepoke_blue</item>
+        <item name="colorPrimaryVariant">@color/pokepoke_dark_blue</item>
+        <item name="colorSecondary">@color/pokepoke_yellow</item>
+
+        <item name="android:windowSplashScreenBackground">@color/pokepoke_background</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_pokepoke</item>
+        <item name="android:windowSplashScreenAnimationDuration">3000</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/pokepoke_background</item>
+   
+
+
+        <!-- Colores de fondo y texto -->
+        <item name="android:colorBackground">@color/pokepoke_background</item>
+        <item name="colorOnBackground">@android:color/black</item>
+    </style>
+</resources>

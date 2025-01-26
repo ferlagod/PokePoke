@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fragmentCaptured"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="@string/captured" />
+    <item
+        android:id="@+id/fragmentPokedex"
+        android:icon="@drawable/pokepoke"
+        android:title="@string/pokedex" />
+    <item
+        android:id="@+id/fragmentSettings"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="@string/settings" />
+</menu>
