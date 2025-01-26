@@ -32,20 +32,16 @@ public class PokemonResponse {
         @SerializedName("url")
         private final String url;
 
+        private final int weight;
         @SerializedName("height")
         private int height;
-
-        @SerializedName("index")
-        private int index;
-
-        @SerializedName("type")
-        private String type;
+        private final int index;
 
         public Result(String url, int weight, int height, int index, String type) {
             this.url = url;
+            this.weight = weight;
             this.height = height;
             this.index = index;
-            this.type = type;
         }
 
 
@@ -86,12 +82,5 @@ public class PokemonResponse {
             }
         }
 
-        public int getHeight() {
-            return height;
-        }
-
-        public void setHeight(int height) {
-            this.height = height;
-        }
     }
 }
