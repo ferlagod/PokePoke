@@ -26,22 +26,16 @@ public class PokemonResponse {
      */
     public static class Result {
 
+        private final int weight;
         @SerializedName("name")
         private String name;
 
         @SerializedName("url")
         private final String url;
 
-        private final int weight;
-        @SerializedName("height")
-        private int height;
-        private final int index;
-
         public Result(String url, int weight, int height, int index, String type) {
             this.url = url;
             this.weight = weight;
-            this.height = height;
-            this.index = index;
         }
 
 
