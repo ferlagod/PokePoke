@@ -135,7 +135,7 @@ public class FragmentCaptured extends Fragment {
 
     /**
      * Elimina todos los Pokémon capturados.
-     * Este método es llamado desde el fragmento de configuraciones.
+     * Este metodo es llamado desde el fragmento de configuraciones.
      */
     public void deleteAllCapturedPokemons() {
         firestore.collection("capturedPokemons")

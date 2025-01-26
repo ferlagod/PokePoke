@@ -2,7 +2,6 @@ package dam.pmdm.pokepoke;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -31,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
     private GoogleSignInClient mGoogleSignInClient;
 
     /**
-     * Método llamado al crear la actividad. Configura la vista y
+     * Metodo llamado al crear la actividad. Configura la vista y
      * los elementos necesarios para la autenticación.
      *
      * @param savedInstanceState Estado previamente guardado de la actividad.
@@ -85,7 +84,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     /**
-     * Método que gestiona el inicio de sesión con email y contraseña.
+     * Metodo que gestiona el inicio de sesión con email y contraseña.
      *
      * @param email Correo electrónico del usuario.
      * @param password Contraseña del usuario.
@@ -116,7 +115,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     /**
-     * Método que gestiona el inicio de sesión con Google.
+     * Metodo que gestiona el inicio de sesión con Google.
      */
     private void signInWithGoogle() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
@@ -124,7 +123,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     /**
-     * Método que gestiona el resultado de actividades iniciadas desde LoginActivity.
+     * Metodo que gestiona el resultado de actividades iniciadas desde LoginActivity.
      *
      * @param requestCode Código de solicitud que identifica la actividad.
      * @param resultCode Código de resultado devuelto por la actividad.

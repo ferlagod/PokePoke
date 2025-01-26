@@ -25,7 +25,7 @@ public class RegisterActivity extends AppCompatActivity {
     private GoogleSignInClient mGoogleSignInClient; // Cliente de Google Sign-In
 
     /**
-     * Método llamado al crear la actividad. Configura las vistas y la autenticación.
+     * Metodo llamado al crear la actividad. Configura las vistas y la autenticación.
      *
      * @param savedInstanceState Estado previamente guardado de la actividad.
      */
@@ -51,7 +51,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     /**
-     * Método que inicia el flujo de inicio de sesión con Google.
+     * Metodo que inicia el flujo de inicio de sesión con Google.
      */
     private void signInWithGoogle() {
         // Inicia el flujo de inicio de sesión con Google
@@ -60,7 +60,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     /**
-     * Método que maneja el resultado del inicio de sesión con Google.
+     * Metodo que maneja el resultado del inicio de sesión con Google.
      *
      * @param requestCode Código de solicitud que identifica la actividad.
      * @param resultCode Código de resultado devuelto por la actividad.

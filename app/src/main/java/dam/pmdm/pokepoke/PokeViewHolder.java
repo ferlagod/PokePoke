@@ -27,7 +27,7 @@ public class PokeViewHolder extends RecyclerView.ViewHolder {
     }
 
     /**
-     * Método para vincular los datos de un Pokémon a la vista del ViewHolder.
+     * Metodo para vincular los datos de un Pokémon a la vista del ViewHolder.
      *
      * @param pokeData El objeto que contiene la información del Pokémon.
      */

@@ -18,7 +18,7 @@ public class RetrofitClient {
     private static Retrofit retrofit;
 
     /**
-     * Método para obtener una instancia única de Retrofit.
+     * Metodo para obtener una instancia única de Retrofit.
      * Si la instancia de Retrofit no existe, se crea una nueva.
      *
      * @return La instancia de Retrofit configurada.

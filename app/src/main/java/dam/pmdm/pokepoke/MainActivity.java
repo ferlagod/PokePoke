@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private NavController navController; // Controlador de navegación
 
     /**
-     * Método llamado al crear la actividad. Configura la navegación y los elementos de la interfaz.
+     * Metodo llamado al crear la actividad. Configura la navegación y los elementos de la interfaz.
      *
      * @param savedInstanceState Estado previamente guardado de la actividad.
      */
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Método que maneja la acción de navegación hacia arriba (en la barra de acción).
+     * Metodo que maneja la acción de navegación hacia arriba (en la barra de acción).
      *
      * @return true si la navegación hacia arriba es exitosa, false de lo contrario.
      */
