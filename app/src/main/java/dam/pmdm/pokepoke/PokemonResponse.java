@@ -76,8 +76,5 @@ public class PokemonResponse {
             }
         }
 
-        public int getHeight() {
-            return height;
-        }
     }
 }
