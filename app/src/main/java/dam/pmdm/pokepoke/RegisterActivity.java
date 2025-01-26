@@ -20,7 +20,6 @@ import com.google.firebase.auth.GoogleAuthProvider;
  */
 public class RegisterActivity extends AppCompatActivity {
 
-    private SignInButton btnGoogleSignIn; // Botón de inicio de sesión con Google
     private FirebaseAuth mAuth; // Instancia de FirebaseAuth
     private GoogleSignInClient mGoogleSignInClient; // Cliente de Google Sign-In
 
@@ -36,7 +35,8 @@ public class RegisterActivity extends AppCompatActivity {
 
         // Inicializar Firebase Auth, SignInButton y GoogleSignInClient
         mAuth = FirebaseAuth.getInstance();
-        btnGoogleSignIn = findViewById(R.id.btnGoogleSignIn);
+        // Botón de inicio de sesión con Google
+        SignInButton btnGoogleSignIn = findViewById(R.id.btnGoogleSignIn);
 
         // Configurar acción para el botón de inicio de sesión con Google
         btnGoogleSignIn.setOnClickListener(v -> signInWithGoogle());
@@ -83,7 +83,7 @@ public class RegisterActivity extends AppCompatActivity {
                                     .addOnCompleteListener(this, firebaseTask -> {
                                         if (firebaseTask.isSuccessful()) {
                                             // Si la autenticación en Firebase es exitosa
-                                            FirebaseUser user = mAuth.getCurrentUser();
+                                            mAuth.getCurrentUser();
                                             // Redirigir a la actividad principal
                                             Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                                             startActivity(intent);

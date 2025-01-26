@@ -15,7 +15,7 @@ import dam.pmdm.pokepoke.databinding.ActivityMainBinding;
  */
 public class MainActivity extends AppCompatActivity {
 
-    private ActivityMainBinding binding; // Enlace a las vistas del layout
+
     private NavController navController; // Controlador de navegación
 
     /**
@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         // Inflar el diseño con ViewBinding,configurar el toolbar y el controlador de navegación
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        // Enlace a las vistas del layout
+        dam.pmdm.pokepoke.databinding.ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setSupportActionBar(binding.toolbar);
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);

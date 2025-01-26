@@ -32,13 +32,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp" />
+        android:layout_marginEnd="40dp"
+        tools:ignore="Autofill,RtlSymmetry" />
 
 
     <EditText
         android:id="@+id/etRegisterEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
@@ -48,13 +50,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="10dp"
         android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp" />
+        android:layout_marginEnd="40dp"
+        tools:ignore="RtlSymmetry" />
 
 
     <EditText
         android:id="@+id/etRegisterPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:hint="@string/password"
         android:inputType="textPassword"
         android:minHeight="48dp"
@@ -64,13 +68,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="10dp"
         android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp" />
+        android:layout_marginEnd="40dp"
+        tools:ignore="RtlSymmetry" />
 
 
     <EditText
         android:id="@+id/etRegisterConfirmPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:hint="@string/confirm_password"
         android:inputType="textPassword"
         android:minHeight="48dp"
@@ -80,7 +86,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="10dp"
         android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp" />
+        android:layout_marginEnd="40dp"
+        tools:ignore="RtlSymmetry" />
 
 
     <Button

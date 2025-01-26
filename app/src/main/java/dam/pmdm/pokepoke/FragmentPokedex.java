@@ -1,5 +1,6 @@
 package dam.pmdm.pokepoke;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,7 +28,6 @@ import retrofit2.Response;
  */
 public class FragmentPokedex extends Fragment {
 
-    private RecyclerView recyclerView;
     private PokeAdapter pokeAdapter;
     private ArrayList<PokeData> pokeList;
     private ProgressBar progressBar;
@@ -51,11 +51,11 @@ public class FragmentPokedex extends Fragment {
 
         progressBar = rootView.findViewById(R.id.progressBar);
 
-        recyclerView = rootView.findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = rootView.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         // Configurar Adaptador con un listener para capturar Pokémon
-        pokeAdapter = new PokeAdapter(poke -> capturePokemon(poke));
+        pokeAdapter = new PokeAdapter(this::capturePokemon);
         recyclerView.setAdapter(pokeAdapter);
 
         // Cargar la lista de Pokémon
@@ -72,9 +72,9 @@ public class FragmentPokedex extends Fragment {
 
         PokemonApiService apiService = RetrofitClient.getClient().create(PokemonApiService.class);
 
-        apiService.getPokemonList(0, 150).enqueue(new Callback<PokemonResponse>() {
+        apiService.getPokemonList(0, 150).enqueue(new Callback<>() {
             @Override
-            public void onResponse(Call<PokemonResponse> call, Response<PokemonResponse> response) {
+            public void onResponse(@NonNull Call<PokemonResponse> call, @NonNull Response<PokemonResponse> response) {
                 progressBar.setVisibility(View.GONE); // Ocultar el ProgressBar
 
                 if (response.isSuccessful() && response.body() != null) {
@@ -83,9 +83,9 @@ public class FragmentPokedex extends Fragment {
                     // Hacer una solicitud para obtener detalles  de cada Pokémon
                     for (PokemonResponse.Result result : response.body().getResults()) {
                         // Realizar otra llamada para obtener los detalles de cada Pokémon (peso, altura, tipos)
-                        apiService.getPokemonDetails(result.getIdFromUrl()).enqueue(new Callback<PokemonDetailsResponse>() {
+                        apiService.getPokemonDetails(result.getIdFromUrl()).enqueue(new Callback<>() {
                             @Override
-                            public void onResponse(Call<PokemonDetailsResponse> call, Response<PokemonDetailsResponse> detailsResponse) {
+                            public void onResponse(@NonNull Call<PokemonDetailsResponse> call, @NonNull Response<PokemonDetailsResponse> detailsResponse) {
                                 if (detailsResponse.isSuccessful() && detailsResponse.body() != null) {
                                     PokemonDetailsResponse details = detailsResponse.body();
                                     pokeList.add(new PokeData(
@@ -105,7 +105,7 @@ public class FragmentPokedex extends Fragment {
                             }
 
                             @Override
-                            public void onFailure(Call<PokemonDetailsResponse> call, Throwable t) {
+                            public void onFailure(@NonNull Call<PokemonDetailsResponse> call, @NonNull Throwable t) {
                                 // Manejo de fallos en la solicitud de detalles
                                 Toast.makeText(getContext(), R.string.error_loading_pokemon, Toast.LENGTH_SHORT).show();
                             }
@@ -115,7 +115,7 @@ public class FragmentPokedex extends Fragment {
             }
 
             @Override
-            public void onFailure(Call<PokemonResponse> call, Throwable t) {
+            public void onFailure(@NonNull Call<PokemonResponse> call, @NonNull Throwable t) {
                 progressBar.setVisibility(View.GONE); // Ocultar el ProgressBar
                 Toast.makeText(getContext(), R.string.error_loading_data, Toast.LENGTH_SHORT).show();
             }
@@ -141,6 +141,7 @@ public class FragmentPokedex extends Fragment {
      *
      * @param pokemon El Pokémon que ha sido capturado.
      */
+    @SuppressLint("NotifyDataSetChanged")
     private void capturePokemon(PokeData pokemon) {
         // Cambiar el estado a capturado
         pokemon.setCaptured(true);

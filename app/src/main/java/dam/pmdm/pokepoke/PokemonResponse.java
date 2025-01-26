@@ -22,15 +22,6 @@ public class PokemonResponse {
     }
 
     /**
-     * Establece la lista de resultados de Pokémon.
-     *
-     * @param results Una lista de objetos Result que representan los Pokémon.
-     */
-    public void setResults(List<Result> results) {
-        this.results = results;
-    }
-
-    /**
      * Clase interna que representa un resultado individual con el nombre y la URL de un Pokémon.
      */
     public static class Result {
@@ -53,6 +44,13 @@ public class PokemonResponse {
         @SerializedName("type")
         private String type;
 
+        public Result(String url, int weight, int height, int index, String type) {
+            this.url = url;
+            this.weight = weight;
+            this.height = height;
+            this.index = index;
+            this.type = type;
+        }
 
 
         /**
@@ -76,7 +74,7 @@ public class PokemonResponse {
 
         /**
          * Extrae el ID del Pokémon desde la URL.
-         * La URL tiene el formato: https://pokeapi.co/api/v2/pokemon/{id}/
+         * La URL tiene el formato: <a href="https://pokeapi.co/api/v2/pokemon/">https://pokeapi.co/api/v2/pokemon/"</a>{id}/
          *
          * @return El ID del Pokémon extraído de la URL, o -1 si la URL es inválida o no se puede parsear.
          */
@@ -92,20 +90,5 @@ public class PokemonResponse {
             }
         }
 
-        public int getWeight() {
-            return weight;
-        }
-
-        public int getHeight() {
-            return height;
-        }
-
-        public int getIndex() {
-            return index;
-        }
-
-        public String getType() {
-            return type;
-        }
     }
 }

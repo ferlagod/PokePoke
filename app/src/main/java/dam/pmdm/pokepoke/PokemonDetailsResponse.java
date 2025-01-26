@@ -19,6 +19,12 @@ public class PokemonDetailsResponse {
     @SerializedName("height")
     private int height;
 
+    public PokemonDetailsResponse(List<Type> types, int weight, int height) {
+        this.types = types;
+        this.weight = weight;
+        this.height = height;
+    }
+
     /**
      * Obtiene la lista de tipos del Pokémon.
      *
@@ -54,6 +60,10 @@ public class PokemonDetailsResponse {
         @SerializedName("type")
         private TypeInfo type;
 
+        public Type(TypeInfo type) {
+            this.type = type;
+        }
+
         /**
          * Obtiene la información del tipo del Pokémon.
          *
@@ -70,6 +80,10 @@ public class PokemonDetailsResponse {
 
             @SerializedName("name")
             private String name;
+
+            public TypeInfo(String name) {
+                this.name = name;
+            }
 
             /**
              * Obtiene el nombre del tipo del Pokémon.

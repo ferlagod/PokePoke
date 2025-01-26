@@ -1,5 +1,6 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/pokepoke_background">
     <data>
         <variable
@@ -26,7 +27,8 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_margin="10dp"
-                android:src="@drawable/ic_launcher_background"/>
+                android:src="@drawable/ic_launcher_background"
+                tools:ignore="ContentDescription" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -49,14 +51,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/pokemon_type"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
                     <TextView
                         android:id="@+id/pokemon_index"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/pokemon_index"
                         android:textSize="10sp"
-                        android:layout_marginStart="10dp"/>
+                        android:layout_marginStart="10dp"
+                        tools:ignore="SmallSp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -68,14 +72,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/pokemon_weight"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
                     <TextView
                         android:id="@+id/pokemon_height"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/pokemon_height"
                         android:textSize="10sp"
-                        android:layout_marginStart="10dp"/>
+                        android:layout_marginStart="10dp"
+                        tools:ignore="SmallSp" />
                 </LinearLayout>
 
             </LinearLayout>
