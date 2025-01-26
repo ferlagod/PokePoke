@@ -14,10 +14,10 @@ public class PokemonDetailsResponse {
     private List<Type> types;
 
     @SerializedName("weight")
-    private int weight;
+    private final int weight;
 
     @SerializedName("height")
-    private int height;
+    private final int height;
 
     public PokemonDetailsResponse(List<Type> types, int weight, int height) {
         this.types = types;
@@ -58,7 +58,7 @@ public class PokemonDetailsResponse {
     public static class Type {
 
         @SerializedName("type")
-        private TypeInfo type;
+        private final TypeInfo type;
 
         public Type(TypeInfo type) {
             this.type = type;
@@ -79,7 +79,7 @@ public class PokemonDetailsResponse {
         public static class TypeInfo {
 
             @SerializedName("name")
-            private String name;
+            private final String name;
 
             public TypeInfo(String name) {
                 this.name = name;
