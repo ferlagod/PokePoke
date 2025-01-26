@@ -26,7 +26,6 @@ public class PokemonResponse {
      */
     public static class Result {
 
-        private final int height;
         @SerializedName("name")
         private String name;
 
@@ -35,7 +34,6 @@ public class PokemonResponse {
 
         public Result(String url, int weight, int height, int index, String type) {
             this.url = url;
-            this.height = height;
         }
 
 
