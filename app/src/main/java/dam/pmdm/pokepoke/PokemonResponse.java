@@ -32,7 +32,7 @@ public class PokemonResponse {
         @SerializedName("url")
         private final String url;
 
-        public Result(String url, int weight, int height, int index, String type) {
+        public Result(String url) {
             this.url = url;
         }
 
